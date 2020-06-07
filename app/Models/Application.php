@@ -95,7 +95,7 @@ class Application extends Model
             end_date =:end_date,
             total_days =:total_days,
             status =:status,
-            resaon =:reason
+            reason =:reason
             WHERE id =:id
         ';
 
