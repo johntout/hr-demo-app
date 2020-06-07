@@ -138,7 +138,7 @@ class Entity implements Arrayable
 
             $this->fireEvent('inserting');
 
-            if ($insert = $model->insert($this)) {
+            if ($model->insert($this)) {
                 $this->fireEvent('inserted');
             }
 
@@ -164,7 +164,7 @@ class Entity implements Arrayable
 
             $this->fireEvent('updating');
 
-            if ($update = $model->update($this)) {
+            if ($model->update($this)) {
                 $this->fireEvent('updated');
             }
 

@@ -22,46 +22,46 @@ class ApplicationFactory extends EntityFactory
 
     /**
      * @param array $data
-     * @param null $userEntity
+     * @param null $applicationEntity
      * @return ApplicationEntity
      */
-    public static function build($data = array(), $userEntity = null) :ApplicationEntity
+    public static function build($data = array(), $applicationEntity = null) :ApplicationEntity
     {
         $data = parent::build($data);
-        $user = self::bootEntity($userEntity);
+        $application = self::bootEntity($applicationEntity);
 
         if (isset($data['id'])) {
-            $user->setId($data['id']);
+            $application->setId($data['id']);
         }
 
         if (isset($data['user_id'])) {
-            $user->setUserId($data['user_id']);
+            $application->setUserId($data['user_id']);
         }
 
         if (isset($data['created_at'])) {
-            $user->setCreatedAt($data['created_at']);
+            $application->setCreatedAt($data['created_at']);
         }
 
         if (isset($data['start_date'])) {
-            $user->setStartDate($data['start_date']);
+            $application->setStartDate($data['start_date']);
         }
 
         if (isset($data['end_date'])) {
-            $user->setEndDate($data['end_date']);
+            $application->setEndDate($data['end_date']);
         }
 
         if (isset($data['total_days'])) {
-            $user->setTotalDays($data['total_days']);
+            $application->setTotalDays($data['total_days']);
         }
 
         if (isset($data['status'])) {
-            $user->setStatus($data['status']);
+            $application->setStatus($data['status']);
         }
 
         if (isset($data['reason'])) {
-            $user->setReason($data['reason']);
+            $application->setReason($data['reason']);
         }
 
-        return $user;
+        return $application;
     }
 }
