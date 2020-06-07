@@ -25,12 +25,7 @@ class Entity implements Arrayable
      * @var string
      */
     protected $event_fired;
-
-    /**
-     * @var mixed
-     */
-    protected static $instance;
-
+    
     /**
      * Entity constructor.
      * @param array $attributes
