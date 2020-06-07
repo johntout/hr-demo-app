@@ -61,8 +61,8 @@ class Application extends Model
                     :start_date,
                     :end_date,
                     :total_days,
-                    :status
-                )
+                    :status,
+                    :reason
         ';
 
         $stmt = db()->prepare($sql);
