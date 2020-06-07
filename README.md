@@ -9,7 +9,7 @@ HR demo app for managing users and vacation applications
 </ul>
 
 ## How to start
-Step 1: Go to your desired directory: `cd /projects`
+Step 1: Go to your desired directory: `cd projects`
 
 Step 2: Clone the repository: `git clone https://github.com/johntout/hr-demo-app.git`
 
