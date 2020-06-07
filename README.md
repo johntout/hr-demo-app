@@ -11,7 +11,7 @@ HR demo app for managing users and vacation applications
 ## How to start
 Step 1: Go to your desired directory: `cd projects`
 
-Step 2: Clone the repository: `git clone https://github.com/johntout/hr-demo-app.git`
+Step 2: Clone the repository: `git clone https://github.com/johntout/hr-demo-app.git && cd hr-demo-app`
 
 Step 3: Install dependencies: `composer install`
 
