@@ -28,13 +28,7 @@ class AuthService implements Services
      */
     public function guest() :UserEntity
     {
-        $user = [
-            'id' => 0,
-            'role_id' => 1,
-            'is_enabled' => 0
-        ];
-
-        return UserFactory::build($user);
+        return UserFactory::build(['id' => 0]);
     }
 
     /**
