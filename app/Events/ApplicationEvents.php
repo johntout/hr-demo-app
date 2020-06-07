@@ -2,9 +2,9 @@
 
 namespace App\Events;
 
-use App\Mails\ApplicationRequestMail;
 use App\Models\User;
 use App\Entities\ApplicationEntity;
+use App\Mails\ApplicationRequestMail;
 use App\Mails\ApplicationOutcomeMail;
 
 class ApplicationEvents

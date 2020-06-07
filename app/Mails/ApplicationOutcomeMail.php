@@ -2,7 +2,6 @@
 
 namespace App\Mails;
 
-use App\Entities\UserEntity;
 use App\Entities\ApplicationEntity;
 
 class ApplicationOutcomeMail extends Mail
