@@ -31,8 +31,8 @@ class ApplicationsController extends MasterController
     {
         $inputStartDate = $request->inputs('start_date');
         $inputEndDate = $request->inputs('end_date');
-        $startDate = date('Y-m-d', strtotime($inputStartDate));
-        $endDate = date('Y-m-d', strtotime($inputEndDate));
+        $startDate = $inputStartDate ? date('Y-m-d', strtotime($inputStartDate)) : null;
+        $endDate = $inputEndDate ? date('Y-m-d', strtotime($inputEndDate)) : null;
         $startDateTime = new \DateTime($startDate);
         $endDateTime = new \DateTime($endDate);
         $totalDays = $startDateTime->diff($endDateTime)->days + 1;
