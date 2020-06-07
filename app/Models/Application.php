@@ -52,7 +52,8 @@ class Application extends Model
                     start_date,
                     end_date,
                     total_days,
-                    status
+                    status,
+                    reason
                 )
                 VALUES(
                     :user_id,
@@ -71,6 +72,7 @@ class Application extends Model
         $stmt->bindValue(':end_date', $application->end_date(),\PDO::PARAM_STR);
         $stmt->bindValue(':total_days', $application->total_days(),\PDO::PARAM_STR);
         $stmt->bindValue(':status', $application->status(),\PDO::PARAM_STR);
+        $stmt->bindValue(':reason', $application->reason(),\PDO::PARAM_STR);
 
         $stmt->execute();
 
@@ -91,7 +93,8 @@ class Application extends Model
             start_date =:start_date,
             end_date =:end_date,
             total_days =:total_days,
-            status =:status
+            status =:status,
+            resaon =:reason
             WHERE id =:id
         ';
 
@@ -103,6 +106,7 @@ class Application extends Model
         $stmt->bindValue(':end_date', $application->end_date(),\PDO::PARAM_STR);
         $stmt->bindValue(':total_days', $application->total_days(),\PDO::PARAM_STR);
         $stmt->bindValue(':status', $application->status(),\PDO::PARAM_STR);
+        $stmt->bindValue(':reason', $application->reason(),\PDO::PARAM_STR);
 
         $stmt->execute();
 
